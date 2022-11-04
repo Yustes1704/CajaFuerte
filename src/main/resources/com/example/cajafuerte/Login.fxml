@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="535.0" style="-fx-background-color: #F0FFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cajafuerte.control.ControlLogin">
+   <children>
+      <Label layoutX="192.0" layoutY="77.0" text="CAJA FUERTE" textFill="#ac0f0f">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="147.0" text="Escriba la combinanción para entrar">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <HBox fx:id="boxes" layoutX="155.0" layoutY="197.0" prefHeight="42.0" prefWidth="219.0">
+         <children>
+            <TextField fx:id="tx1" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="40.0" />
+            <TextField fx:id="tx2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="42.0" />
+            <TextField fx:id="tx3" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="39.0" />
+            <TextField fx:id="tx4" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="40.0" />
+            <TextField fx:id="tx5" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="37.0" />
+            <TextField fx:id="tx6" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="38.0" />
+         </children>
+      </HBox>
+      <Button fx:id="boton" layoutX="226.0" layoutY="288.0" mnemonicParsing="false" onAction="#press" prefHeight="30.0" prefWidth="82.0" text="Abrir">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

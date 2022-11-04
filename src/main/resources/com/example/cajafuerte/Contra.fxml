@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0FFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cajafuerte.control.ControlContra">
+   <children>
+      <Label layoutX="243.0" layoutY="43.0" text="CAJA FUERTE" textFill="#911212">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="100.0" text="Digite la combinanción actual">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <HBox fx:id="boxesAct" layoutX="190.0" layoutY="157.0" prefHeight="42.0" prefWidth="219.0">
+         <children>
+            <TextField fx:id="tx1Act" onAction="#onKey" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="40.0" />
+            <TextField fx:id="tx2Act" onAction="#onKey" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="42.0" />
+            <TextField fx:id="tx3Act" onAction="#onKey" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="39.0" />
+            <TextField fx:id="tx4Act" onAction="#onKey" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="40.0" />
+            <TextField fx:id="tx5Act" onAction="#onKey" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="37.0" />
+            <TextField fx:id="tx6Act" onAction="#onKey" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="38.0" />
+         </children>
+      </HBox>
+      <Label layoutX="209.0" layoutY="237.0" text="Digite la nueva combinanción">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <HBox fx:id="boxes1" layoutX="193.0" layoutY="279.0" prefHeight="42.0" prefWidth="219.0">
+         <children>
+            <TextField fx:id="tx1New" onAction="#onKey2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="40.0" />
+            <TextField fx:id="tx2New" onAction="#onKey2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="42.0" />
+            <TextField fx:id="tx3New" onAction="#onKey2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="39.0" />
+            <TextField fx:id="tx4New" onAction="#onKey2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="40.0" />
+            <TextField fx:id="tx5New" onAction="#onKey2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="37.0" />
+            <TextField fx:id="tx6New" onAction="#onKey2" onKeyTyped="#onKey" prefHeight="42.0" prefWidth="38.0" />
+         </children>
+      </HBox>
+      <Button layoutX="144.0" layoutY="360.0" mnemonicParsing="false" onAction="#claveCambiada" style="-fx-background-color: blue;" text="Cambiar clave" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="360.0" mnemonicParsing="false" onAction="#close" style="-fx-background-color: blue;" text="Cerrar caja" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
